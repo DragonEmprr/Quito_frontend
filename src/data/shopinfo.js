@@ -1,12 +1,11 @@
-export const shopAddress =
-  "123 Fashion Lane, Textile Park, YourCity, PIN 560001";
+export const shopAddress = process.env.REACT_APP_SHOP_ADDRESS;
 
-export const phone = "+91-98765-43210";
+export const phone = process.env.REACT_APP_PHONE_NUMBER;
 
-export const email = "hello@yourbrand.com";
+export const email = process.env.REACT_APP_EMAIL_ADDRESS;
 
 export const googleMapsSrc = `https://www.google.com/maps?q=${encodeURIComponent(
   shopAddress
 )}&output=embed`;
 
-export const apiurl = "https://quito-backend.onrender.com";
+export const apiurl = process.env.REACT_APP_API_URL;

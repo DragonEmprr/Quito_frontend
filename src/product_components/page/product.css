@@ -1,0 +1,18 @@
+.product-details-page {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 40px 5%;
+  box-sizing: border-box;
+}
+
+.right-section {
+  max-width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .product-details-page {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}

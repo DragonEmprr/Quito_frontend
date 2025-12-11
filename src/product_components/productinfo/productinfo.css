@@ -1,0 +1,24 @@
+.details-section {
+    
+  max-width: calc(100vw - 40px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.details-section h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.product-desc {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+  white-space: pre-line;
+}
+
+.product-mrp {
+  font-size: 20px;
+  margin-bottom: 25px;
+}

@@ -1,0 +1,12 @@
+.location-section {
+  padding: 50px;
+  flex: 1;
+}
+
+.location-section iframe {
+  margin: 12px 0;
+}
+
+.contact-links a {
+  margin-right: 16px;
+}

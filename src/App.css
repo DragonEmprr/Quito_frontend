@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  background: #eee;
+}

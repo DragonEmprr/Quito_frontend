@@ -1,0 +1,25 @@
+.contact-section {
+  padding: 40px;
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #ff2f8b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}

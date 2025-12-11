@@ -1,0 +1,9 @@
+.about-section {
+  display: flex;
+  padding: 50px;
+  gap: 40px;
+}
+
+.about-section ul li {
+  margin-top: 6px;
+}

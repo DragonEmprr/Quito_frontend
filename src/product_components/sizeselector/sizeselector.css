@@ -1,0 +1,22 @@
+.size-selector {
+  margin-bottom: 25px;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.size-btn {
+  padding: 8px 16px;
+  border: 1px solid #777;
+  background: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.size-btn.selected-size {
+  background: black;
+  color: white;
+}

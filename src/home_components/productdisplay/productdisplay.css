@@ -1,0 +1,42 @@
+.products-display {
+  padding: 50px;
+  padding-top: 20px;
+}
+
+.product-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Hide scrollbar - Firefox */
+}
+
+.product-scroll::-webkit-scrollbar {
+  display: none; /* Hide scrollbar - Chrome */
+}
+
+/* Default: Mobile → 1 card per view */
+.product-scroll > * {
+  flex: 0 0 70%; /* One card mostly filling the screen */
+}
+
+.product-scroll > .blackbox-scroll {
+  flex: 0 0 1%; /* Small spacer at the end */
+  background-color: grey;
+}
+
+/* Tablet → 2 cards */
+@media (min-width: 600px) {
+  .product-scroll > * {
+    flex: 0 0 calc(40% - 20px);
+  }
+}
+
+/* Desktop → 3 cards */
+@media (min-width: 900px) {
+  .product-scroll > * {
+    flex: 0 0 calc(27% - 20px);
+  }
+}

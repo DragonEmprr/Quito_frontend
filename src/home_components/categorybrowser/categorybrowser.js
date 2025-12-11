@@ -3,6 +3,8 @@ import ProductCard from "../productcard/productcard";
 
 import "./categorybrowser.css";
 
+import { apiurl } from "../../data/shopinfo";
+
 export default function CategoryBrowser() {
   
   const [categories, setCategories] = useState([]);
@@ -10,7 +12,7 @@ export default function CategoryBrowser() {
   const [loading, setLoading] = useState(true);
   
   useEffect(() => {
-    fetch("http://localhost:4000/categories")
+    fetch(`${apiurl}/categories`)
     .then((res) => res.json())
     .then((data) => {
       setCategories(data);
@@ -22,7 +24,7 @@ export default function CategoryBrowser() {
     });
   }, []);
   useEffect(() => {
-    fetch("http://localhost:4000/products")
+    fetch(`${apiurl}/products`)
     .then((res) => res.json())
     .then((data) => {
       setProducts(data);

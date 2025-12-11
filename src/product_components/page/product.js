@@ -10,6 +10,8 @@ import QuantitySelector from "../quantityselector/quantityselector";
 import AddToCartButton from "../addtocart/addtocart";
 import { searchCartItem } from "../../utils/cartutils";
 
+import { apiurl } from "../../data/shopinfo";
+
 export default function ProductDetails() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
@@ -33,7 +35,7 @@ export default function ProductDetails() {
 
   useEffect(() => {
     async function fetchProduct() {
-      const res = await fetch(`http://localhost:4000/product/${id}`);
+      const res = await fetch(`${apiurl}/product/${id}`);
       const data = await res.json();
       setProduct(data);
 

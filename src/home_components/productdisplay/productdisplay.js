@@ -3,12 +3,14 @@ import ProductCard from "../productcard/productcard";
 
 import "./productdisplay.css";
 
+import { apiurl } from "../../data/shopinfo";
+
 export default function ProductDisplay() {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:4000/categories")
+    fetch(`${apiurl}/categories`)
       .then((res) => res.json())
       .then((data) => {
         setCategories(data);

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./cart.css";
 import { removeFromCart, updateQuantity } from "../../utils/cartutils";
+import { apiurl } from "../../data/shopinfo";
 
 export default function CartPage() {
   const [cartItems, setCartItems] = useState([]);
@@ -24,7 +25,7 @@ export default function CartPage() {
     async function fetchProducts() {
       const temp = {};
       for (const item of cartItems) {
-        const res = await fetch(`http://localhost:4000/product/${item.id}`);
+        const res = await fetch(`${apiurl}/product/${item.id}`);
         const data = await res.json();
         temp[item.id] = data;
       }

@@ -2,7 +2,7 @@ import React from "react";
 import "./productcard.css";
 
 import {useNavigate} from "react-router-dom";
-import { searchCartItem, searchCartItemById } from "../../utils/cartutils";
+import { searchCartItemById } from "../../utils/cartutils";
 
 export default function ProductCard({ product, display_only = false }) {
   const navigate = useNavigate();

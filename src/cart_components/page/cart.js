@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./cart.css";
 import { removeFromCart, updateQuantity } from "../../utils/cartutils";
 import { apiurl } from "../../data/shopinfo";
+import { useNavigate } from "react-router-dom";
 
 export default function CartPage() {
+
+  const navigate = useNavigate();
   const [cartItems, setCartItems] = useState([]);
   const [products, setProducts] = useState({});
 
@@ -128,7 +131,7 @@ export default function CartPage() {
       {cartItems.length > 0 && (
         <div className="checkout-bar">
           <h2>Total: ₹{totalCartPrice.toLocaleString()}</h2>
-          <button className="checkout-btn">Proceed to Checkout</button>
+          <button className="checkout-btn" onClick={() => navigate("/checkout")}>Proceed to Checkout</button>
         </div>
       )}
     </div>

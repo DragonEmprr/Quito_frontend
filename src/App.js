@@ -2,13 +2,15 @@
 import {React,  useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 
-import Navbar from "./home_components/navbar/navbar";
+import "./App.css";
 
+
+import Navbar from "./home_components/navbar/navbar";
 import ProductPage from "./product_components/page/product";
 import Home from "./home_components/page/home";
 import CartPage from "./cart_components/page/cart";
+import CheckoutPage from "./checkout_components/page/checkout";
 
-import "./App.css";
 
 
 const ScrollToHash = () => {
@@ -39,6 +41,8 @@ export default function App() {
 
           {/* CART */}
           <Route path="/cart" element={<CartPage />} />
+
+          <Route path="/checkout" element = {<CheckoutPage />} />
         </Routes>
 
         <footer>

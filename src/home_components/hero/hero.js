@@ -1,15 +1,33 @@
 import React, { useEffect, useState } from "react";
 import "./hero.css";
+import { apiurl } from "../../data/shopinfo";
 
 export default function Hero() {
-  const desktopImages = [
-    "https://media.kunduz.com/media/sug-question-candidate/20220303001704987972-4363882.jpg?h=512"
-  ];
 
-  const mobileImages = [
-    "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c"
-  ];
+  const [desktopImages, setDesktopImages] = useState([]);
 
+  const [mobileImages, setMobileImages] = useState([]);
+  useEffect(() => {
+      fetch(`${apiurl}/get_desktop_hero_images`)
+      .then((res) => res.json())
+      .then((data) => {
+        setDesktopImages(data.images);
+      })
+      .catch((err) => {
+        console.error("Error fetching desktop images:", err);
+      });
+    }, []);
+  
+  useEffect(() => {
+      fetch(`${apiurl}/get_mobile_hero_images`)
+      .then((res) => res.json())
+      .then((data) => {
+        setMobileImages(data.images);
+      })
+      .catch((err) => {
+        console.error("Error fetching mobile images:", err);
+      });
+    }, []);
   const [bgIndex, setBgIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -38,8 +56,6 @@ export default function Hero() {
 
       {/* Dark overlay + text */}
       <div className="hero-content">
-        <h1 className="brand-title">QUITO</h1>
-        <h3 className="factory-name">~ RISHU KNITWEAR </h3>
         <div className="hero-text">
           <h2>Beautiful cloth, thoughtfully made.</h2>
           <p>Small-batch designer textiles with handcrafted excellence.</p>

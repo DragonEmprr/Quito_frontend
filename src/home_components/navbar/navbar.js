@@ -22,6 +22,9 @@ export default function Navbar() {
           <Link to="/#about" onClick={() => setOpen(false)}>About</Link>
           <Link to="/#location" onClick={() => setOpen(false)}>Location</Link>
           <Link to="/#contact" onClick={() => setOpen(false)}>Contact</Link>
+          <Link to="/terms-and-conditions" onClick={() => setOpen(false)}>Terms & Conditions</Link>
+          <Link to="/privacy-policy" onClick={() => setOpen(false)}>Privacy Policy</Link>
+          <Link to="/refund-cancellation-policy" onClick={() => setOpen(false)}>Refund & Cancellation</Link>
           <Link to="/cart" onClick={() => setOpen(false)}>Cart</Link>
         </div>
       </nav>

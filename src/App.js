@@ -10,6 +10,10 @@ import ProductPage from "./product_components/page/product";
 import Home from "./home_components/page/home";
 import CartPage from "./cart_components/page/cart";
 import CheckoutPage from "./checkout_components/page/checkout";
+import TermsAndConditions from "./pages/terms_and_conditions";
+import PrivacyPolicy from "./pages/privacy_policy";
+import RefundCancellationPolicy from "./pages/refund_cancellation";
+import Header from "./top/top";
 
 
 
@@ -30,7 +34,9 @@ const ScrollToHash = () => {
 
 export default function App() {
   return (
-    <Router>
+    <Router className="app-container">
+        <Header />
+
         <Navbar />
         <ScrollToHash />
         <Routes>
@@ -43,6 +49,10 @@ export default function App() {
           <Route path="/cart" element={<CartPage />} />
 
           <Route path="/checkout" element = {<CheckoutPage />} />
+
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/refund-cancellation-policy" element={<RefundCancellationPolicy />} />
         </Routes>
 
         <footer>

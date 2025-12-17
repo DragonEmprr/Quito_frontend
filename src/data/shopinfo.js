@@ -9,3 +9,5 @@ export const googleMapsSrc = `https://www.google.com/maps?q=${encodeURIComponent
 )}&output=embed`;
 
 export const apiurl = process.env.REACT_APP_API_URL;
+
+export const instagramurl = process.env.REACT_APP_INSTAGRAM_URL;

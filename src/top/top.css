@@ -88,8 +88,12 @@ font-weight: 600;
   }
   .factory-name {
     margin-top: -6vw;
-    margin-left: 55%;
+    margin-left: 150%;
     font-size: 3vw;
     margin-bottom: 10px;
+  }
+
+  .site-header {
+    height: 13vw;
   }
 }

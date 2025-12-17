@@ -13,3 +13,9 @@ footer {
   margin-top: 20px;
   background: #eee;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 13vw;
+  }
+}

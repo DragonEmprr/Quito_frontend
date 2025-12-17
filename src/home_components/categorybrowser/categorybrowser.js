@@ -42,7 +42,7 @@ export default function CategoryBrowser() {
   );
 
   return (
-    <div className="category-browser">
+    <div id="product-catalogue" className="category-browser">
       {/* Navigation bar */}
       {loading ? (
           <p>Loading...</p>

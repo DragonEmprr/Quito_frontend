@@ -19,6 +19,7 @@ export default function Navbar() {
         <div className="side-links">
           <Link to="/" onClick={() => setOpen(false)}>Home</Link>
           <Link to="/#products" onClick={() => setOpen(false)}>Collection</Link>
+          <Link to="/#product-catalogue" onClick={() => setOpen(false)}>Product Catalogue</Link>
           <Link to="/#about" onClick={() => setOpen(false)}>About</Link>
           <Link to="/#location" onClick={() => setOpen(false)}>Location</Link>
           <Link to="/#contact" onClick={() => setOpen(false)}>Contact</Link>

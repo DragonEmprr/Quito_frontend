@@ -1,12 +1,12 @@
 // src/App.js
 import {React,  useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation, useParams } from "react-router-dom";
 
 import "./App.css";
 
 
 import Navbar from "./home_components/navbar/navbar";
-import ProductPage from "./product_components/page/product";
+import ProductDetails from "./product_components/page/product";
 import Home from "./home_components/page/home";
 import CartPage from "./cart_components/page/cart";
 import CheckoutPage from "./checkout_components/page/checkout";
@@ -31,6 +31,14 @@ const ScrollToHash = () => {
 
   return null;
 };
+
+
+function ProductPage() {
+  const { id } = useParams();
+  const { color, size, number } = useLocation().state || {};
+
+  return <ProductDetails id={id} color={color} size={size} number={number} />;
+}
 
 export default function App() {
   return (

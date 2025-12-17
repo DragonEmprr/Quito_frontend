@@ -97,6 +97,7 @@ export default function CartPage() {
                 className="cart-img"
                 src={product.colors[item.color]}
                 alt={product.name}
+                onClick={() => navigate(`/product/${item.id}`, {state: {color: item.color, size: item.size, number: item.quantity}})}
               />
 
               <div className="cart-info">
@@ -112,7 +113,7 @@ export default function CartPage() {
                 </div>
 
                 <p className="price-line">
-                  <strong>Price:</strong> {product.price} × {item.quantity}
+                  <strong>Price:</strong> {product.price} * {item.quantity}
                 </p>
               </div>
 

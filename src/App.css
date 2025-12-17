@@ -6,6 +6,10 @@ body {
   padding-top: 6vw;
 }
 
+html {
+  scroll-padding-top: 6vw;
+}
+
 
 footer {
   text-align: center;
@@ -17,5 +21,8 @@ footer {
 @media (max-width: 768px) {
   body {
     padding-top: 13vw;
+  }
+  html {
+    scroll-padding-top: 13vw;
   }
 }

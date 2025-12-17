@@ -12,12 +12,12 @@ import { searchCartItem } from "../../utils/cartutils";
 
 import { apiurl } from "../../data/shopinfo";
 
-export default function ProductDetails() {
+export default function ProductDetails({color, size, number}) {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
-  const [selectedColor, setSelectedColor] = useState("");
-  const [selectedSize, setSelectedSize] = useState("");
-  const [quantity, setQuantity] = useState(0);
+  const [selectedColor, setSelectedColor] = useState(color || "");
+  const [selectedSize, setSelectedSize] = useState(size || "");
+  const [quantity, setQuantity] = useState(number || 0);
   const [update, setUpdate] = useState(false);
 
   useEffect(() => {

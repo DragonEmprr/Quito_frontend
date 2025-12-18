@@ -10,9 +10,23 @@ export default function PrivacyPolicy() {
       <section className="privacy-section">
         <h2>Introduction</h2>
         <p>
+          This Privacy Policy applies to the website operated by
+          <strong> Quito</strong>, an India-based business engaged in the
+          manufacturing and sale of women's woollen garments.
+        </p>
+        <p>
           We value your privacy and are committed to protecting your personal
           information. This Privacy Policy explains how we collect, use, and
           safeguard your data when you visit or make a purchase from our website.
+        </p>
+      </section>
+
+      <section className="privacy-section">
+        <h2>Cookies and Tracking</h2>
+        <p>
+          Our website may use cookies and similar technologies to enhance user
+          experience and analyze website traffic. You can control cookie
+          preferences through your browser settings.
         </p>
       </section>
 
@@ -70,10 +84,19 @@ export default function PrivacyPolicy() {
       </section>
 
       <section className="privacy-section">
+        <h2>Governing Law</h2>
+        <p>
+          This Privacy Policy shall be governed by and construed in accordance
+          with the laws of India.
+        </p>
+      </section>
+
+      <section className="privacy-section">
         <h2>Contact Us</h2>
         <p>
-          If you have any questions about this Privacy Policy, please contact us
-          at <strong>support@yourdomain.com</strong>.
+          If you have any questions about this Privacy Policy or how we handle
+          your data, you may contact us at
+          <strong> support@getquito.com</strong>.
         </p>
       </section>
     </div>

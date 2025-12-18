@@ -1,5 +1,5 @@
 import React from "react";
-import { shopAddress, phone, email, googleMapsSrc, instagramurl, instagramhandle } from "../../data/shopinfo";
+import { shopAddress, phone, email, googleMapsSrc, instagramurl } from "../../data/shopinfo";
 
 import "./location.css";
 

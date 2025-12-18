@@ -9,9 +9,8 @@ export default function ColorSelector({ colors, selectedColor, setSelectedColor 
           <button
             key={c}
             className={`color-btn ${selectedColor === c ? "active" : ""}`}
-            style={{ backgroundColor: c }}
             onClick={() => setSelectedColor(c)}
-          ></button>
+          >{c}</button>
         ))}
       </div>
     </div>
